@@ -7,7 +7,8 @@
 
 以「日」为基本单位，基础的日期选择控件
 
-:::demo 基本单位由`type`属性指定。快捷选项需配置`picker-options`对象中的`shortcuts`，禁用日期通过 `disabledDate` 设置，传入函数
+:::demo 基本单位由`type`属性指定。快捷选项需配置`picker-options`对象中的`shortcuts`，禁用日期通过 `disabledDate` 设置，详见 [picker-options](#/zh-CN/component/date-picker#picker-options)。
+
 ```html
 <template>
   <div class="block">
@@ -131,7 +132,7 @@
 
 可在一个选择器中便捷地选择一个时间范围
 
-:::demo 在选择日期范围时，默认情况下左右面板会联动。如果希望两个面板各自独立切换当前月份，可以使用`unlink-panels`属性解除联动。
+:::demo 在选择日期范围时，默认情况下左右面板会联动。如果希望两个面板各自独立切换当前月份，可以使用`unlink-panels`属性解除联动。可以使用 `picker-options` 属性设置禁用状态，设置快捷选项等， 详见 [picker-options](#/zh-CN/component/date-picker#picker-options)。
 ```html
 <template>
   <div class="block">

@@ -7,7 +7,7 @@ Use Date Picker for date input.
 
 Basic date picker measured by 'day'.
 
-:::demo The measurement is determined by the `type` attribute. You can enable quick options by creating a `picker-options` object with `shortcuts` property. The disabled date is set by `disabledDate`, which is a function.
+:::demo The measurement is determined by the `type` attribute. You can enable quick options by creating a `picker-options` object with `shortcuts` property. The disabled date is set by `disabledDate`, which is a function. more information can be found at [picker-options](#/en-US/component/date-picker#picker-options).
 
 ```html
 <template>
@@ -133,7 +133,7 @@ You can choose week, month, year or multiple dates by extending the standard dat
 
 Picking a date range is supported.
 
-:::demo When in range mode, the left and right panels are linked by default. If you want the two panels to switch current months independently, you can use the `unlink-panels` attribute.
+:::demo When in range mode, the left and right panels are linked by default. If you want the two panels to switch current months independently, you can use the `unlink-panels` attribute. You can use `picker-options` to set disabled date and set shortcuts, more information can be found at [picker-options](#/en-US/component/date-picker#picker-options).
 
 ```html
 <template>
