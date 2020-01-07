@@ -42,7 +42,7 @@
       </template>
     </el-input>
 
-    <div v-if="multiple" class="el-cascader__tags">
+    <div ref="tags" v-if="multiple" class="el-cascader__tags">
       <el-tag
         v-for="(tag, index) in presentTags"
         :key="tag.key"
@@ -372,11 +372,11 @@ export default {
       }
     });
 
-    addResizeListener(this.$el, this.updateStyle);
+    addResizeListener(this.$refs.tags, this.updateStyle);
   },
 
   beforeDestroy() {
-    removeResizeListener(this.$el, this.updateStyle);
+    removeResizeListener(this.$refs.tags, this.updateStyle);
   },
 
   methods: {
